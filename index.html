@@ -22,11 +22,11 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 
 body {
-    background-color: #000000;
+    background-color: var(bg-dark);
     color: #000000;
     font-family: var(font-main);
     overflow-x: hidden;
@@ -35,7 +35,6 @@ body {
     flex-direction: column;
 }
 
-/* Background Grid Animation */
 .bg-grid {
     position: fixed;
     top: 0;
@@ -74,10 +73,10 @@ h1 {
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 5px;
-    color: #fff;
+    color: #ffffff;
     text-shadow:
-        0 0 5px #fff,
-        0 0 10px #fff,
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
         0 0 20px var(neon-cyan),
         0 0 40px var(neon-cyan),
         0 0 80px var(neon-cyan);
@@ -94,8 +93,8 @@ h1 {
     57%,
     100% {
         text-shadow:
-            0 0 5px #fff,
-            0 0 10px #fff,
+            0 0 5px #ffffff,
+            0 0 10px #ffffff,
             0 0 20px var(neon-cyan),
             0 0 40px var(neon-cyan),
             0 0 80px var(neon-cyan);
@@ -175,7 +174,7 @@ main {
 }
 
 .card p {
-    color: #ccc;
+    color: #cccccc;
     font-size: 0.9rem;
     line-height: 1.4;
 }
@@ -197,7 +196,7 @@ footer {
     padding: 2rem;
     border-top: 1px solid var(glass-border);
     margin-top: 4rem;
-    color: #666;
+    color: #666666;
     font-size: 0.8rem;
 }
 
@@ -228,7 +227,7 @@ footer {
     grid-column: 1 / -1;
     font-family: var(font-display);
     font-size: 2.5rem;
-    color: #fff;
+    color: #ffffff;
     margin-top: 3rem;
     margin-bottom: 1.5rem;
     border-bottom: 2px solid var(neon-cyan);
