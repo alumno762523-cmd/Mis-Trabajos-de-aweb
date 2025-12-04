@@ -83,6 +83,19 @@ h1 {
         0 0 80px var(--neon-cyan);
     animation: flicker 1.5s infinite alternate;
 }
+.neon-clock {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            color: var(--neon-cyan);
+            text-shadow:
+                0 0 5px var(--neon-cyan),
+                0 0 10px var(--neon-cyan),
+                0 0 20px var(--neon-cyan);
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            letter-spacing: 3px;
+            animation: pulse 2s infinite alternate;
+        }
 
 @keyframes flicker {
 
@@ -266,7 +279,9 @@ footer {
 
     <header>
         <h1>Trabajos de aweb de roberto</h1>
+        <div id="neon-clock" class="neon-clock">00:00:00</div>
         <div class="subtitle">SYSTEM READY // ACCESSING PROJECTS...</div>
+        
     </header>
 
     <main>
@@ -514,6 +529,7 @@ footer {
 
 
 </html>
+
 
 
 
