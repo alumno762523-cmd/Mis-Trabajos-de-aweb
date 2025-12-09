@@ -285,6 +285,51 @@
             animation: pulse 2s infinite alternate;
         }
 
+        .search-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+        }
+
+        #neondex-search {
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid var(--neon-cyan);
+            color: var(--neon-cyan);
+            padding: 10px 15px;
+            padding-left: 40px;
+            /* Space for icon */
+            font-family: var(--font-main);
+            font-size: 1rem;
+            border-radius: 5px;
+            outline: none;
+            box-shadow: 0 0 5px var(--neon-cyan);
+            transition: all 0.3s ease;
+            width: 250px;
+            backdrop-filter: blur(5px);
+        }
+
+        #neondex-search::placeholder {
+            color: rgba(0, 243, 255, 0.5);
+        }
+
+        #neondex-search:focus {
+            box-shadow: 0 0 15px var(--neon-cyan), inset 0 0 10px rgba(0, 243, 255, 0.2);
+            width: 300px;
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            color: var(--neon-cyan);
+            pointer-events: none;
+            font-size: 1.2rem;
+            text-shadow: 0 0 5px var(--neon-cyan);
+        }
+
         @keyframes pulse {
             0% {
                 opacity: 0.8;
@@ -518,6 +563,21 @@
                 <p>Código fuente Java. usando pormt</p>
                 <span class="tag">JAVA</span> <span class="tag">SOURCE</span>
             </a>
+            <a href="JAVA/jsfuncionalert4dic2025RobertoCG.html" class="card">
+                <h2>Cuarto.java</h2>
+                <p>Código fuente Java. usando alert</p>
+                <span class="tag">JAVA</span> <span class="tag">SOURCE</span>
+            </a>
+            <a href="JAVA/js_SumaProducto5dic2025RobertoCG.html" class="card">
+                <h2>Quinto.java</h2>
+                <p>Código fuente Java. usando alert y promt</p>
+                <span class="tag">JAVA</span> <span class="tag">SOURCE</span>
+            </a>
+            <a href="JAVA/jsNotaalumno5dic2025RobertoCG.html" class="card">
+                <h2>Sexto.java</h2>
+                <p>Código fuente Java. usando alert y promt</p>
+                <span class="tag">JAVA</span> <span class="tag">SOURCE</span>
+            </a>
 
             <!-- SECTION 4: COMPRESSED -->
             <h2 class="section-title compressed">DATA ARCHIVES</h2>
@@ -582,7 +642,6 @@
 
         function updateClock() {
             const now = new Date();
-            // Date
             const day = String(now.getDate()).padStart(2, '0');
             const month = String(now.getMonth() + 1).padStart(2, '0');
             const year = now.getFullYear();
@@ -590,8 +649,6 @@
             if (dateElement) {
                 dateElement.textContent = `${day}/${month}/${year}`;
             }
-
-            // Time
             const hours = String(now.getHours()).padStart(2, '0');
             const minutes = String(now.getMinutes()).padStart(2, '0');
             const seconds = String(now.getSeconds()).padStart(2, '0');
