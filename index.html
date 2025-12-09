@@ -212,6 +212,27 @@
             letter-spacing: 2px;
         }
 
+        .social-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--neon-pink);
+            color: var(--neon-pink);
+            background: rgba(255, 0, 255, 0.1);
+            box-shadow: 0 0 10px var(--neon-pink);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .social-btn:hover {
+            background: var(--neon-pink);
+            color: #000;
+            box-shadow: 0 0 20px var(--neon-pink);
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             h1 {
@@ -611,6 +632,8 @@
 
     <footer>
         <div class="status-bar">SYSTEM ONLINE</div>
+        <br>
+        <a href="https://www.instagram.com/cgr.2007/" target="_blank" class="social-btn">INSTAGRAM ACCESS</a>
         <p style="margin-top: 1rem;">&copy; 2025 Roberto Casado. All systems nominal.</p>
     </footer>
 
